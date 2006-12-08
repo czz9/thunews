@@ -84,6 +84,7 @@ sub getfile{
 		$temp=~s/&#039/'/ig;
 		$temp=~s/&lt;/</ig;
 		$temp=~s/&gt;/>/ig;
+		$temp=~s/<[^>]+>//ig;
 		$temp .= "\n";
 
 		my $numatts=(@atts) / 2;
